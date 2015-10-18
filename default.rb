@@ -22,12 +22,12 @@ ditamap="<?xml version='1.0' encoding='UTF-8'?>
   </topicmeta>"
 
 Dir.glob("cheatsheets-xml-test-data/**/*_composite.xml").each do |filename|
-  input = Nokogiri::XML(File.new(filename))
+  document = Nokogiri::XML(File.new(filename))
+  template = Nokogiri::XSLT(File.read('default.xsl'))
   ditamap+="\n  <topicref href='dita/#{File.basename(filename,'.*')}.dita' type='task'/>"
-  output = Nokogiri::XML::Document.new
-  output.root = Nokogiri::XML::Node.new("output/", output)
-  input.root.xpath("//*").each {|n| output.root << n}
-  File.open("output/dita/" + File.basename(filename,'.*') + '.dita', 'w') {|f| f.write(output.to_xml) }
+
+  transformed_document = template.transform(document)
+  File.open("output/dita/" + File.basename(filename,'.*') + '.dita', 'w').write(transformed_document)
 end
 
 ditamap+="\n</map>"
