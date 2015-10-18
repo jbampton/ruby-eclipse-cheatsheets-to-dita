@@ -1,23 +1,23 @@
 # ruby-eclipse-cheatsheets-to-dita
 Eclipse cheat sheets (XML) to DITA with Ruby
 
-This is a first attempt at using Ruby to transform custom XML into DITA.
+This project uses Ruby to transform custom XML (Eclipse cheat sheets) into DITA.
 
-The default.rb builds the Ditamap 'map.ditamap' in the 'output' directory.
+The files default.rb and default.xsl build the parent Ditamap 'map.ditamap' in the 'output' directory and the 4 sub tasks in the 'output/dita' folder.
 
-More to come soon....
+It uses Ruby to create the ditamap and Ruby and Nokogiri XSLT to create the sub task files.
 
-It uses Nokogiri to parse the cheat sheets (XML)
-
-I used RubyMine for development.  It is an integrated development environment (IDE) for Ruby and Rails projects and has Git functionality built in.
+I used RubyMine and OS X for development.  RubyMine is an integrated development environment (IDE) for Ruby and Rails projects and has Git functionality built in.
 
 RubyMine is a very advanced code editor that is a commercial product from JetBrains.  I also like PyCharm and IntelliJ from JetBrains.
 
 The 'cheatsheets-xml-test-data' comes from another open source project I worked on and they are best viewed inside Eclipse.
 
+Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas.
+
+The DITA standard is maintained by the OASIS DITA Technical Committee.
+
 Eclipse is a more general purpose IDE written mainly in Java.
-
-
 
 JetBrains RubyMine - https://www.jetbrains.com/ruby/
 
@@ -47,11 +47,11 @@ https://www.ruby-lang.org/en/
 
 https://www.ruby-toolbox.com/
 
-http://brew.sh/
+Homebrew - The missing package manager for OS X - http://brew.sh/
 
-http://brewformulas.org/
+Install Homebrew formulas - http://brewformulas.org/
 
-https://www.virtualbox.org/
+Oracle Virtualbox - https://www.virtualbox.org/
 
 
 
