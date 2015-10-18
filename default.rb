@@ -1,0 +1,37 @@
+require 'nokogiri'
+require 'date'
+
+ditamap="<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC '-//OASIS//DTD DITA Map//EN' 'map.dtd'>
+<map>
+  <title>Debrief Topic Map</title>
+  <topicmeta>
+    <searchtitle>Eclipse cheat sheets to PDF</searchtitle>
+    <shortdesc>Document Publishing Adventures with the DITA Open Toolkit</shortdesc>
+    <author>Debrief</author>
+    <author>John Bampton</author>
+    <source>http://debrief.info/</source>
+    <publisher>Github John Bampton</publisher>
+    <critdates>
+      <created date='#{Date.today}'/>
+    </critdates>
+    <audience type='programmer' job='troubleshooting' experiencelevel='expert'/>
+    <category>Java</category>
+    <category>Document Publishing</category>
+    <othermeta name='Publishing' content='PDF,TocJS,XHTML,DITA,HTMLhelp'/>
+  </topicmeta>"
+
+Dir.glob("cheatsheets-xml-test-data/**/*_composite.xml").each do |filename|
+  input = Nokogiri::XML(File.new(filename))
+  ditamap+="\n  <topicref href='dita/#{File.basename(filename,'.*')}.dita' type='task'/>"
+  output = Nokogiri::XML::Document.new
+  output.root = Nokogiri::XML::Node.new("output/", output)
+  input.root.xpath("//*").each {|n| output.root << n}
+  File.open("output/dita/" + File.basename(filename,'.*') + '.dita', 'w') {|f| f.write(output.to_xml) }
+end
+
+ditamap+="\n</map>"
+File.open("output/map.ditamap",'w'){|f| f.write("#{ditamap}")}
+
+puts ditamap
+
