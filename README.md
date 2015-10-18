@@ -1,7 +1,6 @@
-# ruby-eclipse-cheatsheets-to-dita
-Eclipse cheat sheets (XML) to DITA with Ruby
+# Eclipse cheat sheets (XML) to DITA with Ruby and XSL
 
-This project uses Ruby to transform custom XML (Eclipse cheat sheets) into DITA.
+This project uses Ruby, XSL and the Nokogiri gem to transform custom XML (Eclipse cheat sheets) into DITA.
 
 The files default.rb and default.xsl build the parent Ditamap 'map.ditamap' in the 'output' directory and the 4 sub tasks in the 'output/dita' folder.
 
@@ -26,6 +25,10 @@ Eclipse - https://eclipse.org/
 Eclipse cheat sheets - http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm
 
 DITA - https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture
+
+XSLT FAQ. Docbook FAQ. Braille. - http://www.dpawson.co.uk/
+
+W3C - The Extensible Stylesheet Language Family (XSL) - http://www.w3.org/Style/XSL/
 
 The Organization for the Advancement of Structured Information Standards (OASIS) - https://en.wikipedia.org/wiki/OASIS_(organization)
 
