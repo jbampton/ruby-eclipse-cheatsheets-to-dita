@@ -1,7 +1,9 @@
 require 'nokogiri'
 require 'date'
 
-ditamap="<?xml version='1.0' encoding='UTF-8'?>
+sortOrder = ['intro_composite.xml','analysis_composite.xml','s2r_composite.xml','satc_composite.xml']
+
+ditamap = "<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE map PUBLIC '-//OASIS//DTD DITA Map//EN' 'map.dtd'>
 <map>
   <title>Debrief Topic Map</title>
@@ -21,11 +23,10 @@ ditamap="<?xml version='1.0' encoding='UTF-8'?>
     <othermeta name='Publishing' content='PDF,TocJS,XHTML,DITA,HTMLhelp'/>
   </topicmeta>"
 
-Dir.glob("cheatsheets-xml-test-data/**/*_composite.xml").each do |filename|
+Dir.glob("cheatsheets-xml-test-data/**/*_composite.xml").sort_by{|_| sortOrder.index(File.basename(_))}.each do |filename|
   document = Nokogiri::XML(File.new(filename))
   template = Nokogiri::XSLT(File.read('default.xsl'))
   ditamap+="\n  <topicref href='dita/#{File.basename(filename,'.*')}.dita' type='task'/>"
-
   transformed_document = template.transform(document)
   File.open("output/dita/" + File.basename(filename,'.*') + '.dita', 'w').write(transformed_document)
 end

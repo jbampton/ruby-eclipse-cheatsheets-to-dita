@@ -17,8 +17,8 @@
     <category>Document Publishing</category>
     <othermeta name='Publishing' content='PDF,TocJS,XHTML,DITA,HTMLhelp'/>
   </topicmeta>
-  <topicref href='dita/analysis_composite.dita' type='task'/>
   <topicref href='dita/intro_composite.dita' type='task'/>
+  <topicref href='dita/analysis_composite.dita' type='task'/>
   <topicref href='dita/s2r_composite.dita' type='task'/>
   <topicref href='dita/satc_composite.dita' type='task'/>
 </map>
