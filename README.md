@@ -10,11 +10,13 @@ As we are using Ruby you will need to see if it's installed on your system.
 
 In a terminal type: ruby -v  - for further information on your local Ruby environment type: ruby --help
 
-Type: man gem - for more information on the gem command.
+Type: gem -h - for more information on the gem command.
 
-I recommend running: gem list --local - to see which gems are currently installed on your system.
+I recommend running: gem list --local - to see which gems are currently installed on your system.  
 
-You must install the Nokogiri gem by running: gem install nokogiri
+To see in further detail which gems are installed bring up a locally served web page at http://localhost:8808/ by typing: gem server
+
+You must install the Nokogiri gem by running: sudo gem install nokogiri
 
 The XSL code is embedded inside Ruby as well as some XML markup in an interpolated Heredoc syntax.
 
