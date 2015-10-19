@@ -4,7 +4,7 @@ This project uses Ruby, XSLT, XPath and the Nokogiri gem to transform custom XML
 
 The 'cheatsheets-xml-test-data' are best viewed inside Eclipse, and are used as input when 'default.rb' runs.
 
-'default.rb' also uses 'default.xsl' to build the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder.
+'default.rb' builds the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder.
 
 The project uses Ruby to create the ditamap and Ruby and Nokogiri XSLT to create the sub task files.
 
