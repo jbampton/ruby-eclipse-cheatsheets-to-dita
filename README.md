@@ -1,4 +1,4 @@
-# Eclipse cheat sheets (XML) to DITA with Ruby, XSLT, XPath, Nokogiri and now with Prawn to PDF
+# Eclipse cheat sheets (XML) to DITA with Ruby, XSLT, XPath, Nokogiri
 
 This project uses Ruby, XSL and the Nokogiri gem to transform custom XML (Eclipse cheat sheets) into DITA.
 
