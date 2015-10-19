@@ -4,7 +4,9 @@ This project uses Ruby, XSLT, XPath and the Nokogiri gem to transform custom XML
 
 The 'cheatsheets-xml-test-data' are best viewed inside Eclipse, and are used as input when 'default.rb' runs.
 
-'default.rb' builds the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder.
+The Ruby file 'default.rb' builds the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder.
+
+The XSL code is embedded inside Ruby code in an interpolated Heredoc syntax.  This allowed me to overcome XSLT 1.0 limitations and use Ruby to print the current date easily.
 
 The project uses Ruby to create the ditamap and Ruby and Nokogiri XSLT to create the sub task files.
 
@@ -19,8 +21,6 @@ RubyMine is a very advanced code editor that is a commercial product from JetBra
 Eclipse is a more general purpose IDE written mainly in Java.
 
 JetBrains RubyMine - https://www.jetbrains.com/ruby/
-
-Prawn PDF - http://prawnpdf.org/api-docs/2.0/
 
 Eclipse - https://eclipse.org/
 
@@ -46,9 +46,9 @@ JetBrains PyCharm - https://www.jetbrains.com/pycharm/
 
 Essential programmer training - http://www.codewars.com/
 
-http://ruby-doc.org/
+Help and documentation for the Ruby programming language - http://ruby-doc.org/
 
-https://www.ruby-lang.org/en/
+Ruby Programming Language - https://www.ruby-lang.org/en/
 
 The Ruby Toolbox - https://www.ruby-toolbox.com/
 
