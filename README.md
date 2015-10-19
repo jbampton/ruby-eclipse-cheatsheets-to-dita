@@ -6,9 +6,23 @@ The 'cheatsheets-xml-test-data' are best viewed inside Eclipse, and are used as 
 
 The Ruby file 'default.rb' builds the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder.
 
+As we are using Ruby you will need to see if it's installed on your system.
+
+In a terminal type: ruby -v  - for further information on your local Ruby environment type: ruby --help
+
+Type: man gem - for more information on the gem command.
+
+I recommend running: gem list --local - to see which gems are currently installed on your system.
+
+You must install the Nokogiri gem by running: gem install nokogiri
+
 The XSL code is embedded inside Ruby as well as some XML markup in an interpolated Heredoc syntax.
 
-The project uses Ruby to create the ditamap and Ruby and Nokogiri XSLT to create the sub task files.
+This project has XSL code taken from one step in another one of my open source projects, and reused slightly differently here with Ruby.
+
+The other project used Apache Ant, SaxonHE, XSL and ran inside Eclipse therefor requiring Java.
+
+This project uses Ruby to create the ditamap and Ruby and Nokogiri XSLT to create the sub task files.
 
 Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas.
 
