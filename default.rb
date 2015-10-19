@@ -3,7 +3,7 @@ require 'date'
 
 order = %w(intro_composite.xml analysis_composite.xml s2r_composite.xml satc_composite.xml)
 
-stylesheet = <<'EOS'
+stylesheet = <<EOS
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
