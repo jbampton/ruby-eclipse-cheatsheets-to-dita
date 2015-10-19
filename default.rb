@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'date'
 
-order = ['intro_composite.xml','analysis_composite.xml','s2r_composite.xml','satc_composite.xml']
+order = %w(intro_composite.xml analysis_composite.xml s2r_composite.xml satc_composite.xml)
 
 stylesheet = <<'EOS'
 <xsl:stylesheet
@@ -93,20 +93,39 @@ stylesheet = <<'EOS'
 </xsl:stylesheet>
 EOS
 
-ditamap = "<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE map PUBLIC '-//OASIS//DTD DITA Map//EN' 'map.dtd'>
+ditamap = <<-EOS
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
-  <title>Debrief Topic Map</title>"
+  <title>Debrief Topic Map</title>
+  <topicmeta>
+    <searchtitle>Debrief Eclipse cheat sheets</searchtitle>
+    <shortdesc>Overview of Debrief inside Eclipse</shortdesc>
+    <author>Debrief</author>
+    <author>John Bampton</author>
+    <source>http://debrief.info/</source>
+    <publisher>Github John Bampton</publisher>
+    <critdates>
+      <created date="#{Date.today}"/>
+    </critdates>
+    <audience type="marine expert" job="analysis" experiencelevel="intermediate"/>
+    <category>Maritime</category>
+    <category>Software</category>
+    <othermeta name="type" content="Naval"/>
+  </topicmeta>
+EOS
 
 Dir.glob("cheatsheets-xml-test-data/**/*_composite.xml").sort_by{|_| order.index(File.basename(_))}.each do |filename|
   document = Nokogiri::XML(File.new(filename))
   template = Nokogiri::XSLT(stylesheet)
-  ditamap+="\n  <topicref href='dita/#{File.basename(filename,'.*')}.dita' type='task'/>"
+  ditamap += <<-EOS
+  <topicref href="dita/#{File.basename(filename,'.*')}.dita" type="task"/>
+  EOS
   transformed_document = template.transform(document)
   File.open("output/dita/" + File.basename(filename,'.*') + '.dita', 'w').write(transformed_document)
 end
 
-ditamap+="\n</map>"
+ditamap += "</map>"
 
 File.open("output/map.ditamap",'w'){|f| f.write("#{ditamap}")}
 
