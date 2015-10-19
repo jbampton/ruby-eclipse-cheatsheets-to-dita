@@ -21,7 +21,7 @@ ditamap = "<?xml version='1.0' encoding='UTF-8'?>
     <audience type='programmer' job='troubleshooting' experiencelevel='expert'/>
     <category>Java</category>
     <category>Document Publishing</category>
-    <othermeta name='Publishing' content='PDF,TocJS,XHTML,DITA,HTMLhelp'/>
+    <othermeta name='Publishing' content='DITA'/>
   </topicmeta>"
 
 Dir.glob("cheatsheets-xml-test-data/**/*_composite.xml").sort_by{|_| sortOrder.index(File.basename(_))}.each do |filename|
