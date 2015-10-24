@@ -73,3 +73,9 @@ Homebrew - The missing package manager for OS X - http://brew.sh/
 Install Homebrew formulas - http://brewformulas.org/
 
 Oracle Virtualbox - https://www.virtualbox.org/
+
+RubyInstaller for Windows - http://rubyinstaller.org/
+
+Ruby Version Manager (RVM) - https://rvm.io/
+
+Installing Ruby - https://www.ruby-lang.org/en/documentation/installation/    
