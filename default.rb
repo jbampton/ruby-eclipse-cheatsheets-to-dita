@@ -122,7 +122,7 @@ Dir.glob('cheatsheets-xml-test-data/**/*_composite.xml').sort_by{|_| order.index
   <topicref href="dita/#{File.basename(filename,'.*')}.dita" type="task"/>
   EOS
   transformed_document = template.transform(document)
-  File.open('output/dita/' + File.basename(filename,'.*') + '.dita', 'w').write(transformed_document)
+  File.open("output/dita/#{File.basename(filename,'.*')}.dita", 'w').write(transformed_document)
 end
 
 ditamap += '</map>'
