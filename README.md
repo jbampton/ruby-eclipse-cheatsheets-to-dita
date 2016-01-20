@@ -1,5 +1,7 @@
 # Eclipse cheat sheets (XML) to DITA with Ruby, XSL, Nokogiri
 
+I worked on https://github.com/debrief/debrief and this project is based on some parts of the document publishing that I did in that project
+
 This project uses Ruby, XSLT, XPath and the Nokogiri gem to transform custom XML (Eclipse cheat sheets) into DITA.
 
 The 'cheatsheets-xml-test-data' are best viewed inside Eclipse, and are used as input when 'default.rb' runs.
@@ -20,9 +22,7 @@ You must install the Nokogiri gem by running: sudo gem install nokogiri
 
 The XSL code is embedded inside Ruby as well as some XML markup in an interpolated Heredoc syntax.
 
-This project has XSL code taken from one step in another one of my open source projects, and reused slightly differently here with Ruby.
-
-The other project used Apache Ant, SaxonHE, XSL and ran inside Eclipse therefor requiring Java.
+The Debrief project used Apache Ant, SaxonHE, XSL and ran inside Eclipse therefor requiring Java.
 
 This project uses Ruby to create the ditamap and Ruby and Nokogiri XSLT to create the sub task files.
 
