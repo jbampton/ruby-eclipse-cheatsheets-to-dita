@@ -10,15 +10,37 @@ The Ruby file 'default.rb' builds the output parent Ditamap 'map.ditamap' (outpu
 
 As we are using Ruby you will need to see if it's installed on your system.
 
-In a terminal type: ruby -v  - for further information on your local Ruby environment type: ruby --help
+In a terminal type: ruby -v  
+
+For further information on your local Ruby environment type: ruby --help
+
+![ruby -v](documentation/images/rvm-ruby-v.png)
+
+![ruby --help](documentation/images/ruby-help.png)
+
+You must install the Nokogiri gem by running:
+ 
+gem install nokogiri
+
+![gem install nokogiri](documentation/images/gem-install-nokogiri.png)
 
 Type: gem -h - for more information on the gem command.
 
-I recommend running: gem list --local - to see which gems are currently installed on your system.  
+![gem -h](documentation/images/gem-h.png)
 
-To see in further detail which gems are installed bring up a locally served web page at http://localhost:8808/ by typing: gem server
+I recommend running: 
 
-You must install the Nokogiri gem by running: sudo gem install nokogiri
+gem list --local - to see which gems are currently installed on your system.  
+
+![gem list --local](documentation/images/gem-list-local.png)
+
+To see in further detail which gems are installed bring up a locally served web page at http://localhost:8808/ by typing: 
+
+gem server
+
+![gem server](documentation/images/gem-server.png)
+
+![gem server localhost](documentation/images/gem-server-webpage.png)
 
 The XSL code is embedded inside Ruby as well as some XML markup in an interpolated Heredoc syntax.
 
@@ -35,6 +57,8 @@ I used RubyMine and OS X for development.  RubyMine is an integrated development
 RubyMine is a very advanced code editor that is a commercial product from JetBrains.  I also like PyCharm and IntelliJ from JetBrains.
 
 Eclipse is a more general purpose IDE written mainly in Java.
+
+##Resources
 
 JetBrains RubyMine - https://www.jetbrains.com/ruby/
 
