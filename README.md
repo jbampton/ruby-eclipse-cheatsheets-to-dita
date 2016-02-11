@@ -76,7 +76,11 @@ The Organization for the Advancement of Structured Information Standards (OASIS)
 
 Codecademy - Learn the Command Line - https://www.codecademy.com/courses/learn-the-command-line
 
-Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
+Codecademy - Learn Ruby - https://www.codecademy.com/learn/ruby
+
+CodeSchool - Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
+
+CodeSchool Try Ruby - https://www.codeschool.com/courses/try-ruby
 
 Ruby regular expression editor - http://rubular.com/
 
@@ -111,3 +115,15 @@ Ruby Motion success stories - http://www.rubymotion.com/references/success-stori
 The Top Ruby Jobs - https://toprubyjobs.com/
 
 Australian companies using Rails - https://github.com/rails-oceania/roro/wiki/Australian-Companies-using-Ruby-on-Rails
+
+IDE - Integrated Development Environment - https://en.wikipedia.org/wiki/Integrated_development_environment
+
+Git (software) - https://en.wikipedia.org/wiki/Git_(software)
+
+man page - https://en.wikipedia.org/wiki/Man_page
+
+Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
+
+Essential programmer training - http://www.codewars.com/
+
+Mastering Markdown - https://guides.github.com/features/mastering-markdown/
