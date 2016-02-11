@@ -10,9 +10,13 @@ The Ruby file 'default.rb' builds the output parent Ditamap 'map.ditamap' (outpu
 
 As we are using Ruby you will need to see if it's installed on your system.
 
-In a terminal type: ruby -v  
+In a terminal type: 
 
-For further information on your local Ruby environment type: ruby --help
+###ruby -v  
+
+For further information on your local Ruby environment type: 
+
+###ruby --help
 
 ![ruby -v](documentation/images/rvm-ruby-v.png)
 
@@ -20,23 +24,27 @@ For further information on your local Ruby environment type: ruby --help
 
 You must install the Nokogiri gem by running:
  
-gem install nokogiri
+###gem install nokogiri
 
 ![gem install nokogiri](documentation/images/gem-install-nokogiri.png)
 
-Type: gem -h - for more information on the gem command.
+For more information on the gem command:
+
+###gem -h 
 
 ![gem -h](documentation/images/gem-h.png)
 
 I recommend running: 
 
-gem list --local - to see which gems are currently installed on your system.  
+###gem list --local  
+
+that shows which gems are currently installed on your system.  
 
 ![gem list --local](documentation/images/gem-list-local.png)
 
 To see in further detail which gems are installed bring up a locally served web page at http://localhost:8808/ by typing: 
 
-gem server
+###gem server
 
 ![gem server](documentation/images/gem-server.png)
 
@@ -59,6 +67,8 @@ RubyMine is a very advanced code editor that is a commercial product from JetBra
 Eclipse is a more general purpose IDE written mainly in Java.
 
 ##Resources
+
+Nokogiri - http://www.nokogiri.org/
 
 JetBrains RubyMine - https://www.jetbrains.com/ruby/
 
