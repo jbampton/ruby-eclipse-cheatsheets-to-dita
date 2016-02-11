@@ -1,8 +1,16 @@
-# Eclipse cheat sheets (XML) to DITA with Ruby, XSL, Nokogiri
+#Eclipse cheat sheets (XML) to DITA with Ruby, XSL, Nokogiri
 
-I worked on https://github.com/debrief/debrief and this project is based on some parts of the document publishing that I did in that project
+I worked on the open source Java based project [Debrief](http://debrief.info/) the leading maritime analysis tool which is also on GitHub at [https://github.com/debrief/debrief](https://github.com/debrief/debrief).  
 
-This project uses Ruby, XSLT, XPath and the Nokogiri gem to transform custom XML (Eclipse cheat sheets) into DITA.
+The Debrief project used Apache Ant, SaxonHE, XSLT 2.0 and XPath 2.0 and ran inside Eclipse therefore requiring Java.  The Debrief document publishing project has been extracted into its own self contained GitHub repository at [https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf).
+
+This project uses mainly uses Ruby and the Nokogiri gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.
+
+Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas.
+
+The DITA standard is maintained by the OASIS DITA Technical Committee.
+
+The XSL code is embedded inside Ruby as well as some XML markup in an interpolated Heredoc syntax. 
 
 The 'cheatsheets-xml-test-data' are best viewed inside Eclipse, and are used as input when 'default.rb' runs.
 
@@ -49,16 +57,6 @@ To see in further detail which gems are installed bring up a locally served web 
 ![gem server](documentation/images/gem-server.png)
 
 ![gem server localhost](documentation/images/gem-server-webpage.png)
-
-The XSL code is embedded inside Ruby as well as some XML markup in an interpolated Heredoc syntax.
-
-The Debrief project used Apache Ant, SaxonHE, XSL and ran inside Eclipse therefor requiring Java.
-
-This project uses Ruby to create the ditamap and Ruby and Nokogiri XSLT to create the sub task files.
-
-Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas.
-
-The DITA standard is maintained by the OASIS DITA Technical Committee.
 
 I used RubyMine and OS X for development.  RubyMine is an integrated development environment (IDE) for Ruby and Rails projects and has Git functionality built in.
 
