@@ -30,7 +30,17 @@ For further information on your local Ruby environment type:
 
 ![ruby --help](documentation/images/ruby-help.png)
 
-You must install the Nokogiri gem by running:
+If you would like to read more in-depth about Ruby type:
+
+###man ruby
+
+![man ruby](documentation/images/man-ruby.png)
+
+You can use the up and down arrows to navigate through the man page.  Press q to quit
+
+Man pages hold a lot of information about programs and should be your first point of call when trying to understand a program like Ruby
+
+This program uses the Nokogiri gem so you must install it by running:
  
 ###gem install nokogiri
 
