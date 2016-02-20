@@ -38,6 +38,28 @@ If you would like to read more in-depth about Ruby type:
 
 You can use the up and down arrows to navigate through the man page.  Press q to quit
 
+Ruby also ships with 'ri' a tool used to display information about Ruby Classes, modules and methods from your terminal
+
+A lot of people don't know 'ri' exists and use google search instead.
+
+###man ri
+
+![man ri](documentation/images/man-ri.png)
+
+Ruby also ships with a fantastic tool called IRB.  IRB is the interactive Ruby console where you can test out your Ruby commands inside a terminal.  
+
+###man irb
+
+![man irb](documentation/images/man-irb.png)
+
+And to use IRB type:
+
+###irb
+
+![irb](documentation/images/irb.png)
+
+You type 'exit' to stop using irb and return to the standard terminal.
+
 Man pages hold a lot of information about programs and should be your first point of call when trying to understand a program like Ruby
 
 This program uses the Nokogiri gem so you must install it by running:
