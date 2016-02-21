@@ -36,7 +36,9 @@ If you are still to afraid to dive in and try Ruby, how about a couple easy free
 - [Try Ruby](http://tryruby.org/levels/1/challenges/0) 
 - [Codecademy Ruby](https://www.codecademy.com/learn/ruby)
 
-So now that you are Gung-Ho on Ruby open a terminal and type:
+And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become faster, stronger and more powerful....JEDI MASTER LEVEL.....1??!?!!  
+
+So now that you are Ruby Gung-Ho, the new Ruby [Bruce Lee](https://en.wikipedia.org/wiki/Bruce_Lee) on the street, open a terminal and type:
 
 ###ruby -v  
 
