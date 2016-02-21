@@ -1,12 +1,14 @@
 #Eclipse cheat sheets (XML) to DITA with Ruby, XSL, Nokogiri
 
+This project uses [Ruby](https://www.ruby-lang.org/en/) and trys to be and easy to use tutorial on all thing Ruby.
+
 I worked on the open source Java based project [Debrief](http://debrief.info/) the leading maritime analysis tool which is also on GitHub at [https://github.com/debrief/debrief](https://github.com/debrief/debrief).  
 
 The Debrief project used Apache Ant, SaxonHE, XSLT 2.0 and XPath 2.0 and ran inside Eclipse therefore requiring Java.  The Debrief document publishing project has been extracted into its own self contained GitHub repository at [https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf).
 
-This project uses mainly uses Ruby and the Nokogiri gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.
+Using Ruby allows use to harness the power of [RubyGems](https://rubygems.org/) particularly the [Nokogiri](http://www.nokogiri.org/) gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.
 
-Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas.
+[Darwin Information Typing Architecture](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture) (DITA) is an XML data model for authoring and using the [DITA Open Toolkit](http://www.dita-ot.org/) (DITA-OT) you can publish those ideas.
 
 The DITA standard is maintained by the OASIS DITA Technical Committee.
 
@@ -17,6 +19,10 @@ The 'cheatsheets-xml-test-data' are best viewed inside Eclipse, and are used as 
 The Ruby file 'default.rb' builds the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder.
 
 As we are using Ruby you will need to see if it's installed on your system.
+
+[Matz](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto) made run Ruby fun and easy to learn, so don't be sacred and first check out a short Ruby YouTube video I created.
+
+[Ruby in 29 seconds](https://youtu.be/2ei7S0FU65E)
 
 In a terminal type: 
 
