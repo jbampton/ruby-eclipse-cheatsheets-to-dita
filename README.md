@@ -2,6 +2,8 @@
 
 This project uses [Ruby](https://www.ruby-lang.org/en/) and trys to be and easy to use tutorial on all thing Ruby.
 
+Hey come and check out the [Ruby in 4 seconds](https://youtu.be/ayx4fASYkZU) video.
+
 I worked on the open source Java based project [Debrief](http://debrief.info/) the leading maritime analysis tool which is also on GitHub at [https://github.com/debrief/debrief](https://github.com/debrief/debrief).  
 
 The Debrief project used Apache Ant, SaxonHE, XSLT 2.0 and XPath 2.0 and ran inside Eclipse therefore requiring Java.  The Debrief document publishing project has been extracted into its own self contained GitHub repository at [https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf).
@@ -10,9 +12,10 @@ Using Ruby allows use to harness the power of [RubyGems](https://rubygems.org/) 
 
 [Darwin Information Typing Architecture](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture) (DITA) is an XML data model for authoring and using the [DITA Open Toolkit](http://www.dita-ot.org/) (DITA-OT) you can publish those ideas.
 
-The DITA standard is maintained by the OASIS DITA Technical Committee.
+The DITA standard is maintained by the [OASIS](https://www.oasis-open.org/) DITA Technical Committee.
 
-The XSL code is embedded inside Ruby as well as some XML markup in an interpolated Heredoc syntax. 
+[Ruby](https://www.ruby-lang.org/en/) is very [powerful](https://www.ruby-lang.org/en/documentation/success-stories/) and this project's Ruby code has some XSL code embedded,
+ as well as some [XML](https://en.wikipedia.org/wiki/XML) markup in an interpolated [Heredoc](http://ruby-doc.org/core-2.2.0/doc/syntax/literals_rdoc.html) syntax. 
 
 The 'cheatsheets-xml-test-data' are best viewed inside Eclipse, and are used as input when 'default.rb' runs.
 
@@ -24,7 +27,12 @@ As we are using Ruby you will need to see if it's installed on your system.
 
 [Ruby in 29 seconds](https://youtu.be/2ei7S0FU65E)
 
-In a terminal type: 
+If you are still to afraid to dive in and try Ruby, how about a couple easy free web based interactive courses on Ruby:
+
+- [Try Ruby](http://tryruby.org/levels/1/challenges/0) 
+- [Codecademy Ruby](https://www.codecademy.com/learn/ruby)
+
+So now that you are GungHo on Ruby open a terminal and type:
 
 ###ruby -v  
 
