@@ -27,7 +27,7 @@ The Ruby file that is used in this project is 'default.rb' builds the output par
 
 As we are using Ruby you will need to see if it's installed on your system.
 
-[Matz](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto) made run Ruby fun and easy to learn, so don't be sacred and first check out a short Ruby YouTube video I created.
+[Matz](https://twitter.com/matz_translated) made run Ruby fun and easy to learn, so don't be sacred and first check out a short Ruby YouTube video I created.
 
 [Ruby in 29 seconds](https://youtu.be/2ei7S0FU65E)
 
@@ -187,3 +187,9 @@ Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
 Essential programmer training - http://www.codewars.com/
 
 Mastering Markdown - https://guides.github.com/features/mastering-markdown/
+
+##List of Ruby
+
+https://twitter.com/matz_translated
+
+https://www.facebook.com/pages/Yukihiro-Matsumoto/109410772411674
