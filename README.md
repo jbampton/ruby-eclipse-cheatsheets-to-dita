@@ -192,4 +192,12 @@ Mastering Markdown - https://guides.github.com/features/mastering-markdown/
 
 https://twitter.com/matz_translated
 
+https://twitter.com/yukihiro_matz
+
 https://www.facebook.com/pages/Yukihiro-Matsumoto/109410772411674
+
+https://plus.google.com/communities/101878695540653445908
+
+
+##Contributions
+Fork and pull request. Simple.
