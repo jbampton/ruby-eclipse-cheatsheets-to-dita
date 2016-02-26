@@ -27,7 +27,7 @@ The Ruby file that is used in this project is 'default.rb' builds the output par
 
 As we are using Ruby you will need to see if it's installed on your system.
 
-[Matz](https://twitter.com/matz_translated) made run Ruby fun and easy to learn, so don't be sacred and first check out a short Ruby YouTube video I created.
+[Matz](https://twitter.com/matz_translated) made run Ruby fun and easy to learn, so don't be scared and first check out a short Ruby YouTube video I created.
 
 [Ruby in 29 seconds](https://youtu.be/2ei7S0FU65E)
 
