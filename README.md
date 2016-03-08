@@ -191,6 +191,10 @@ Essential programmer training - http://www.codewars.com/
 
 Mastering Markdown - https://guides.github.com/features/mastering-markdown/
 
+One-Click rubyinstaller and DevKit - ttps://bintray.com/oneclick/rubyinstaller
+
+MinGW - Minimalist GNU for Windows - http://www.mingw.org/
+
 ##List of Ruby
 
 https://twitter.com/matz_translated
