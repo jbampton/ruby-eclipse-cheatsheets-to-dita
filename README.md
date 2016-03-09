@@ -39,9 +39,9 @@ If you are still to afraid to dive in and try Ruby, how about some easy free web
 - [Try Git](https://www.codeschool.com/courses/try-git)
 - [Learn Git](https://www.codecademy.com/learn/learn-git)
 
-And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become faster, stronger and more powerful....JEDI MASTER LEVEL.....1??!?!!  
+And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become **faster**, **stronger** and **more powerful**....**JEDI MASTER LEVEL**.....**??!?!!**  
 
-So now that you are Ruby Gung-Ho, the new Ruby [Bruce Lee](https://en.wikipedia.org/wiki/Bruce_Lee) on the street, open a terminal and type:
+So now that you are the [Chuck Norris](https://en.wikipedia.org/wiki/Chuck_Norris) of all things Ruby, open a terminal and type:
 
 ###ruby -v  
 
