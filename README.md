@@ -71,7 +71,7 @@ A lot of people don't know 'ri' exists and use google search instead.
 
 ![man ri](documentation/images/man-ri.png)
 
-Ruby also ships with a fantastic tool called IRB.  IRB is the interactive Ruby console where you can test out your Ruby commands inside a terminal.  
+Ruby also ships with a fantastic tool called IRB.  IRB is the interactive Ruby shell where you can test out your Ruby commands inside a terminal.  I made [short video on IRB](https://www.youtube.com/watch?v=CpFgz5Iq3qA) on Youtube to the magical sounds of Fon Leman.
 
 ###man irb
 
