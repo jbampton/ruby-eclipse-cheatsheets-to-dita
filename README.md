@@ -55,7 +55,7 @@ For further information on your local Ruby environment type:
 
 ![ruby --help](documentation/images/ruby-help.png)
 
-[man pages](https://en.wikipedia.org/wiki/Man_page) hold a lot of information about programs.
+[man pages](https://en.wikipedia.org/wiki/Man_page) contain a lot of information about programs.
 
 ###man ruby
 
