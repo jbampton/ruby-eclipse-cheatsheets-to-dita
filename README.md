@@ -63,6 +63,8 @@ If you would like to read more in-depth about Ruby type:
 
 You can use the up and down arrows to navigate through the man page.  Press q to quit
 
+Man pages hold a lot of information about programs and should be your first point of call when trying to understand a program like Ruby
+
 Ruby also ships with 'ri' a tool used to display information about Ruby Classes, modules and methods from your terminal
 
 A lot of people don't know 'ri' exists and use google search instead.
@@ -85,7 +87,15 @@ And to use IRB type:
 
 You type 'exit' to stop using irb and return to the standard terminal.
 
-Man pages hold a lot of information about programs and should be your first point of call when trying to understand a program like Ruby
+You can add 'tab' completion to irb by creating a .irbrc file
+
+You can use the nano editor to create this by entering:
+
+###nano .irbrc
+
+Then entering the next line:
+
+###require 'irb/completion'
 
 This program uses the Nokogiri gem so you must install it by running:
  
