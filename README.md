@@ -1,6 +1,6 @@
 #Eclipse cheat sheets (XML) to DITA with Ruby, XSL, Nokogiri
 
-This project uses [Ruby](https://www.ruby-lang.org/en/) and tries to be and easy to use tutorial on all thing [Ruby](http://ruby-doc.org).
+This project uses [Ruby](https://www.ruby-lang.org/en/) and tries to be and easy to use tutorial on all things  [Ruby](http://ruby-doc.org).
 
 Ruby dates back to the 1990's and was first created by a Japanese man named [Yukihiro "Matz" Matsumoto](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto). 
 
