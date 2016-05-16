@@ -10,13 +10,13 @@ I worked on the open source [Java](https://www.oracle.com/java/index.html) based
 
 The Debrief project used [Apache Ant](http://ant.apache.org), [SaxonHE](https://sourceforge.net/projects/saxon/files/Saxon-HE/), [XSLT 2.0](https://www.w3.org/TR/xslt20/) and [XPath](https://www.w3.org/TR/xpath-3/) and ran inside [Eclipse](https://eclipse.org) therefore requiring [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html).  The Debrief document publishing project has been extracted into its own self contained GitHub repository at [https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf).
 
-Using [Ruby](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=59579) on this project allows use to harness the power of [RubyGems](https://rubygems.org/) particularly the [Nokogiri](http://www.nokogiri.org/) gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.  This project is only one step from the publishing pipeline that was built on Debrief project which produced a PDF as its final output.
+Using [Ruby](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=59579) on this project allows use to harness the power of [RubyGems](https://rubygems.org/) particularly the [Nokogiri](http://www.nokogiri.org/) gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.  This project is only one step from the publishing pipeline that was built on Debrief project which produced a [PDF](https://acrobat.adobe.com/us/en/why-adobe/about-adobe-pdf.html) as its final output.
 
 [Darwin Information Typing Architecture](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture) (DITA) is an [XML](https://en.wikipedia.org/wiki/XML) data model for authoring and using the [DITA Open Toolkit](http://www.dita-ot.org/) (DITA-OT) you can publish those ideas.
 
 The DITA standard is maintained by the [OASIS](https://www.oasis-open.org/) DITA Technical Committee.
 
-[Ruby](https://www.ruby-lang.org/en/) is very [powerful](https://www.ruby-lang.org/en/documentation/success-stories/), is growing in popularity and is currently ranked 9th on the [TIOBE Index](http://www.tiobe.com/tiobe_index). 
+[Ruby](https://www.ruby-lang.org/en/) is very [powerful](https://www.ruby-lang.org/en/documentation/success-stories/), is growing in popularity and is currently ranked 8th on the [TIOBE Index](http://www.tiobe.com/tiobe_index). 
 
 This project's Ruby code has some [XSL](https://en.wikipedia.org/wiki/XSL) code embedded,
  as well as some [XML](https://en.wikipedia.org/wiki/XML) markup in an interpolated [Heredoc](http://ruby-doc.org/core-2.2.0/doc/syntax/literals_rdoc.html) syntax. 
@@ -26,8 +26,6 @@ The [Eclipse cheat sheets](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.e
 There are two types of Ruby files: .rb, .rbw
 
 The Ruby file that is used in this project is 'default.rb' builds the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder.
-
-As we are using Ruby you will need to see if it's installed on your system.
 
 [Matz](https://twitter.com/matz_translated) made run Ruby fun and easy to learn, so don't be scared and first check out a short Ruby YouTube video I created.
 
@@ -42,6 +40,15 @@ If you are still to afraid to dive in and try Ruby, how about some easy free web
 - [Learn Git](https://www.codecademy.com/learn/learn-git)
 
 And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become **faster**, **stronger** and **more powerful**....**JEDI MASTER LEVEL**.....**??!?!!**  
+
+You will by now want to write your own homegrown Ruby Code so some programmers use advanced integrated development environments ([IDE's](https://en.wikipedia.org/wiki/Integrated_development_environment)) that offer colored code markup or auto completion as you type.
+
+- [Komode Edit](http://komodoide.com/komodo-edit/)
+- [Sublime Text](https://www.sublimetext.com/)
+- [Komode IDE](http://komodoide.com/)
+- [JetBrains RubyMine](https://www.jetbrains.com/ruby/)
+
+As we are using Ruby you will need to see if it's installed on your system.
 
 So now that you are the [Chuck Norris](https://en.wikipedia.org/wiki/Chuck_Norris) of all things Ruby, open a terminal and type:
 
