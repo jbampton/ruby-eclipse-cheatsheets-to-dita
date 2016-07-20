@@ -43,9 +43,9 @@ And then come train in the [REAL DOJO](http://www.codewars.com) and reach your h
 
 You will by now want to write your own homegrown Ruby Code so some programmers use advanced integrated development environments ([IDE's](https://en.wikipedia.org/wiki/Integrated_development_environment)) that offer colored code markup or auto completion as you type.
 
-- [Komode Edit](http://komodoide.com/komodo-edit/)
+- [Komodo Edit](http://komodoide.com/komodo-edit/)
 - [Sublime Text](https://www.sublimetext.com/)
-- [Komode IDE](http://komodoide.com/)
+- [Komodo IDE](http://komodoide.com/)
 - [JetBrains RubyMine](https://www.jetbrains.com/ruby/)
 
 As we are using Ruby you will need to see if it's installed on your system.
