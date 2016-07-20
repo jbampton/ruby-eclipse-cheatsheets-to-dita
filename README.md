@@ -204,8 +204,6 @@ man page - https://en.wikipedia.org/wiki/Man_page
 
 Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
 
-Essential programmer training - http://www.codewars.com/
-
 Mastering Markdown - https://guides.github.com/features/mastering-markdown/
 
 One-Click rubyinstaller and DevKit - https://bintray.com/oneclick/rubyinstaller
