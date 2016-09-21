@@ -1,7 +1,10 @@
 require 'nokogiri'
 require 'date'
 
-order = %w(intro_composite.xml analysis_composite.xml s2r_composite.xml satc_composite.xml)
+order = %w(intro_composite.xml
+           analysis_composite.xml
+           s2r_composite.xml
+           satc_composite.xml)
 
 stylesheet = <<'EOS'
 <xsl:stylesheet
@@ -104,7 +107,7 @@ ditamap = <<-EOS
     <author>Debrief</author>
     <author>John Bampton</author>
     <source>http://debrief.info/</source>
-    <publisher>Github John Bampton and #{11461173985121.to_s.split(/[356]/).map(&:to_i).map(&:chr).join.capitalize}</publisher>
+    <publisher>Github John Bampton and #{11_461_173_985_121.to_s.split(/[356]/).map(&:to_i).map(&:chr).join.capitalize}</publisher>
     <critdates>
       <created date="#{Date.today}"/>
     </critdates>
@@ -115,18 +118,21 @@ ditamap = <<-EOS
   </topicmeta>
 EOS
 
-Dir.glob('cheatsheets-xml-test-data/**/*_composite.xml').sort_by{|_| order.index(File.basename(_))}.each do |filename|
+Dir.glob('cheatsheets-xml-test-data/**/*_composite.xml')
+   .sort_by { |x| order.index(File.basename(x)) }
+   .each do |filename|
   document = Nokogiri::XML(File.new(filename))
   template = Nokogiri::XSLT(stylesheet)
   ditamap += <<-EOS
-  <topicref href="dita/#{File.basename(filename,'.*')}.dita" type="task"/>
+  <topicref href="dita/#{File.basename(filename, '.*')}.dita" type="task"/>
   EOS
   transformed_document = template.transform(document)
-  File.open("output/dita/#{File.basename(filename,'.*')}.dita", 'w').write(transformed_document)
+  File.open("output/dita/#{File.basename(filename, '.*')}.dita", 'w')
+      .write(transformed_document)
 end
 
 ditamap += '</map>'
 
-File.open('output/map.ditamap','w'){|f| f.write("#{ditamap}")}
+File.open('output/map.ditamap', 'w') { |f| f.write(ditamap) }
 
 puts ditamap
