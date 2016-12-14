@@ -66,6 +66,8 @@ For further information on your local Ruby environment type:
 
 ![ruby --help](documentation/images/ruby-help.png)
 
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
 [man pages](https://en.wikipedia.org/wiki/Man_page) contain a lot of information about programs.
 
 ###man ruby
@@ -82,6 +84,8 @@ A lot of people don't know 'ri' exists and use google search instead.
 
 ![man ri](documentation/images/man-ri.png)
 
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
 Ruby also ships with a fantastic tool called IRB.  IRB is the interactive Ruby shell where you can test out your Ruby commands inside a terminal.  I made [short video on IRB](https://www.youtube.com/watch?v=CpFgz5Iq3qA) on Youtube to the magical sounds of Fon Leman.
 
 ###man irb
@@ -96,6 +100,8 @@ And to use IRB type:
 
 You type 'exit' to stop using irb and return to the standard terminal.
 
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
 You can add 'tab' completion to irb by creating a .irbrc file
 
 You can use the nano editor to create this by entering:
@@ -107,16 +113,22 @@ Then entering the next line:
 ###require 'irb/completion'
 
 This program uses the Nokogiri gem so you must install it by running:
- 
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
 ###gem install nokogiri
 
 ![gem install nokogiri](documentation/images/gem-install-nokogiri.png)
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
 
 For more information on the gem command:
 
 ###gem -h 
 
 ![gem -h](documentation/images/gem-h.png)
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
 
 I recommend running: 
 
@@ -134,11 +146,16 @@ To see in further detail which gems are installed bring up a locally served web 
 
 ![gem server localhost](documentation/images/gem-server-webpage.png)
 
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
 I used RubyMine and OS X for development.  RubyMine is an integrated development environment (IDE) for Ruby and Rails projects and has Git functionality built in.
 
 RubyMine is a very advanced code editor that is a commercial product from JetBrains.  I also like PyCharm and IntelliJ from JetBrains.
 
 Eclipse is a more general purpose IDE written mainly in Java.
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
 
 ##Resources
 
@@ -214,6 +231,9 @@ One-Click rubyinstaller and DevKit - https://bintray.com/oneclick/rubyinstaller
 
 MinGW - Minimalist GNU for Windows - http://www.mingw.org/
 
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
+
 ##List of Ruby
 
 https://github.com/ruby/ruby
@@ -226,6 +246,10 @@ https://www.facebook.com/pages/Yukihiro-Matsumoto/109410772411674
 
 https://plus.google.com/communities/101878695540653445908
 
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
 
 ##Contributions
 Fork and pull request. Simple.
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri)
