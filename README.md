@@ -76,6 +76,8 @@ For further information on your local Ruby environment type:
 
 You can use the up and down arrows to navigate through the man page.  Press q to quit
 
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
 Ruby also ships with 'ri' a tool used to display information about Ruby Classes, modules and methods from your terminal
 
 A lot of people don't know 'ri' exists and use google search instead.
@@ -91,6 +93,8 @@ Ruby also ships with a fantastic tool called IRB.  IRB is the interactive Ruby s
 ###man irb
 
 ![man irb](documentation/images/man-irb.png)
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
 
 And to use IRB type:
 
