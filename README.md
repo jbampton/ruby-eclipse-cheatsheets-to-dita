@@ -48,6 +48,10 @@ You will by now want to write your own homegrown Ruby Code so some programmers u
 - [Komodo IDE](http://komodoide.com/)
 - [JetBrains RubyMine](https://www.jetbrains.com/ruby/)
 
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
+##Installation
+
 As we are using Ruby you will need to see if it's installed on your system.
 
 So now that you are the [Chuck Norris](https://en.wikipedia.org/wiki/Chuck_Norris) of all things Ruby, open a terminal and type:
