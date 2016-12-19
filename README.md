@@ -16,7 +16,7 @@ Using [Ruby](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.
 
 The DITA standard is maintained by the [OASIS](https://www.oasis-open.org/) DITA Technical Committee.
 
-[Ruby](https://www.ruby-lang.org/en/) is very [powerful](https://www.ruby-lang.org/en/documentation/success-stories/), is growing in popularity and is currently ranked 11th on the [TIOBE Index](http://www.tiobe.com/tiobe_index). 
+[Ruby](https://www.ruby-lang.org/en/) is very [powerful](https://www.ruby-lang.org/en/documentation/success-stories/), is growing in popularity and is currently ranked 12th on the [TIOBE Index](http://www.tiobe.com/tiobe_index). 
 
 This project's Ruby code has some [XSL](https://en.wikipedia.org/wiki/XSL) code embedded,
  as well as some [XML](https://en.wikipedia.org/wiki/XML) markup in an interpolated [Heredoc](http://ruby-doc.org/core-2.2.0/doc/syntax/literals_rdoc.html) syntax. 
@@ -43,6 +43,7 @@ And then come train in the [REAL DOJO](http://www.codewars.com) and reach your h
 
 You will by now want to write your own homegrown Ruby Code so some programmers use advanced integrated development environments ([IDE's](https://en.wikipedia.org/wiki/Integrated_development_environment)) that offer colored code markup or auto completion as you type.
 
+- [Atom](https://atom.io/)
 - [Komodo Edit](http://komodoide.com/komodo-edit/)
 - [Sublime Text](https://www.sublimetext.com/)
 - [Komodo IDE](http://komodoide.com/)
