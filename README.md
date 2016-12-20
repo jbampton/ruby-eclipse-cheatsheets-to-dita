@@ -1,20 +1,50 @@
 #Eclipse cheat sheets (XML) to DITA with Ruby, XSL, Nokogiri
 
+##The Ruby Story
+
 This project uses [Ruby](https://www.ruby-lang.org/en/) and tries to be and easy to use tutorial on all things  [Ruby](http://ruby-doc.org).
 
 Ruby dates back to the 1990's and was first created by a Japanese man named [Yukihiro "Matz" Matsumoto](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto). 
 
 Hey come and check out the [Ruby in 4 seconds](https://youtu.be/ayx4fASYkZU) video.
 
+There are two types of Ruby files: .rb, .rbw
+
+[Matz](https://twitter.com/matz_translated) made run Ruby fun and easy to learn, so don't be scared and first check out a short Ruby YouTube video I created.
+
+[Ruby in 29 seconds](https://youtu.be/2ei7S0FU65E)
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
+
+##Project Background
+
 I worked on the open source [Java](https://www.oracle.com/java/index.html) based project [Debrief](http://debrief.info/) the leading maritime analysis tool which is also on GitHub at [https://github.com/debrief/debrief](https://github.com/debrief/debrief).  
 
 The Debrief project used [Apache Ant](http://ant.apache.org), [SaxonHE](https://sourceforge.net/projects/saxon/files/Saxon-HE/), [XSLT 2.0](https://www.w3.org/TR/xslt20/) and [XPath](https://www.w3.org/TR/xpath-3/) and ran inside [Eclipse](https://eclipse.org) therefore requiring [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html).  The Debrief document publishing project has been extracted into its own self contained GitHub repository at [https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf).
 
-Using [Ruby](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=59579) on this project allows use to harness the power of [RubyGems](https://rubygems.org/) particularly the [Nokogiri](http://www.nokogiri.org/) gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.  This project is only one step from the publishing pipeline that was built on Debrief project which produced a [PDF](https://acrobat.adobe.com/us/en/why-adobe/about-adobe-pdf.html) as its final output.
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
+
+##From XSLT 2.0 with Saxon to Ruby
+
+Using [Ruby](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=59579) on this project allows use to harness the power of [RubyGems](https://rubygems.org/) particularly the [Nokogiri](http://www.nokogiri.org/) gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.  This project is only one step from the publishing pipeline that was built on Debrief project which produced a [PDF](https://acrobat.adobe.com/us/en/why-adobe/about-adobe-pdf.html) as its final output. 
+
+The Ruby file that is used in this project is 'default.rb' builds the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder. 
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
+
+##DITA Background
 
 [Darwin Information Typing Architecture](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture) (DITA) is an [XML](https://en.wikipedia.org/wiki/XML) data model for authoring and using the [DITA Open Toolkit](http://www.dita-ot.org/) (DITA-OT) you can publish those ideas.
 
 The DITA standard is maintained by the [OASIS](https://www.oasis-open.org/) DITA Technical Committee.
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
+
+##The Project
 
 [Ruby](https://www.ruby-lang.org/en/) is very [powerful](https://www.ruby-lang.org/en/documentation/success-stories/), is growing in popularity and is currently ranked 12th on the [TIOBE Index](http://www.tiobe.com/tiobe_index). 
 
@@ -23,13 +53,10 @@ This project's Ruby code has some [XSL](https://en.wikipedia.org/wiki/XSL) code 
 
 The [Eclipse cheat sheets](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm) test data folder - 'cheatsheets-xml-test-data' is best viewed inside Eclipse, and is used as input when 'default.rb' runs.
 
-There are two types of Ruby files: .rb, .rbw
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
 
-The Ruby file that is used in this project is 'default.rb' builds the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder.
 
-[Matz](https://twitter.com/matz_translated) made run Ruby fun and easy to learn, so don't be scared and first check out a short Ruby YouTube video I created.
-
-[Ruby in 29 seconds](https://youtu.be/2ei7S0FU65E)
+##Short online courses
 
 If you are still to afraid to dive in and try Ruby, how about some easy free web based interactive courses on Ruby and technology in general:
 
@@ -40,6 +67,11 @@ If you are still to afraid to dive in and try Ruby, how about some easy free web
 - [Learn Git](https://www.codecademy.com/learn/learn-git)
 
 And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become **faster**, **stronger** and **more powerful**....**JEDI MASTER LEVEL**.....**??!?!!**  
+
+[&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
+
+
+##IDE Choice
 
 You will by now want to write your own homegrown Ruby Code so some programmers use advanced integrated development environments ([IDE's](https://en.wikipedia.org/wiki/Integrated_development_environment)) that offer colored code markup or auto completion as you type.
 
