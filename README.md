@@ -26,7 +26,7 @@ The Debrief project used [Apache Ant](http://ant.apache.org), [SaxonHE](https://
 [&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
 
 
-##From XSLT 2.0 with Saxon to Ruby
+##From Java, XSLT 2.0 with Saxon to Ruby, XSLT 1.0 with the Nokogiri Ruby gem
 
 Using [Ruby](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=59579) on this project allows use to harness the power of [RubyGems](https://rubygems.org/) particularly the [Nokogiri](http://www.nokogiri.org/) gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.  This project is only one step from the publishing pipeline that was built on Debrief project which produced a [PDF](https://acrobat.adobe.com/us/en/why-adobe/about-adobe-pdf.html) as its final output. 
 
