@@ -1,13 +1,12 @@
 require 'nokogiri'
 require 'date'
 
-order = %w(intro_composite.xml
+order = %w[intro_composite.xml
            analysis_composite.xml
            s2r_composite.xml
-           satc_composite.xml)
+           satc_composite.xml]
 
-stylesheet = <<'EOS'
-<xsl:stylesheet
+stylesheet = %(<xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:debrief="http://www.debrief.info/"
@@ -93,11 +92,9 @@ stylesheet = <<'EOS'
     <xsl:apply-templates/>
   </xsl:template>
 
-</xsl:stylesheet>
-EOS
+</xsl:stylesheet>)
 
-ditamap = <<-EOS
-<?xml version="1.0" encoding="UTF-8"?>
+ditamap = %(<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
   <title>Debrief Topic Map</title>
@@ -115,8 +112,7 @@ ditamap = <<-EOS
     <category>Maritime</category>
     <category>Software</category>
     <othermeta name="type" content="Naval"/>
-  </topicmeta>
-EOS
+  </topicmeta>)
 
 Dir.glob('cheatsheets-xml-test-data/**/*_composite.xml')
    .sort_by { |x| order.index(File.basename(x)) }
