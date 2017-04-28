@@ -16,7 +16,8 @@
     <category>Maritime</category>
     <category>Software</category>
     <othermeta name="type" content="Naval"/>
-  </topicmeta>  <topicref href="dita/intro_composite.dita" type="task"/>
+  </topicmeta>
+  <topicref href="dita/intro_composite.dita" type="task"/>
   <topicref href="dita/analysis_composite.dita" type="task"/>
   <topicref href="dita/s2r_composite.dita" type="task"/>
   <topicref href="dita/satc_composite.dita" type="task"/>

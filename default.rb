@@ -119,15 +119,15 @@ Dir.glob('cheatsheets-xml-test-data/**/*_composite.xml')
    .each do |filename|
   document = Nokogiri::XML(File.new(filename))
   template = Nokogiri::XSLT(stylesheet)
-  ditamap += <<-EOS
-  <topicref href="dita/#{File.basename(filename, '.*')}.dita" type="task"/>
-  EOS
+  ditamap += %(
+  <topicref href="dita/#{File.basename(filename, '.*')}.dita" type="task"/>)
   transformed_document = template.transform(document)
   File.open("output/dita/#{File.basename(filename, '.*')}.dita", 'w')
       .write(transformed_document)
 end
 
-ditamap += '</map>'
+ditamap += '
+</map>'
 
 File.open('output/map.ditamap', 'w') { |f| f.write(ditamap) }
 
