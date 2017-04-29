@@ -4,9 +4,11 @@
 
 This project uses [Ruby](https://www.ruby-lang.org/en/) and tries to be and easy to use tutorial on all things  [Ruby](http://ruby-doc.org).
 
-Ruby dates back to the 1990's and was first created by a Japanese man named [Yukihiro "Matz" Matsumoto](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto). 
+Ruby dates back to the 1990's and was first created by a Japanese man named [Yukihiro "Matz" Matsumoto](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto).
 
 Hey come and check out the [Ruby in 4 seconds](https://youtu.be/ayx4fASYkZU) video.
+
+[Ruby](https://www.ruby-lang.org/en/) is very [powerful](https://www.ruby-lang.org/en/documentation/success-stories/), is growing in popularity and is currently ranked 11th on the [TIOBE Index](http://www.tiobe.com/tiobe_index).
 
 There are two types of Ruby files: .rb, .rbw
 
@@ -28,9 +30,9 @@ The Debrief project used [Apache Ant](http://ant.apache.org), [SaxonHE](https://
 
 ## From Java, XSLT 2.0 with Saxon to Ruby, XSLT 1.0 with the Nokogiri Ruby gem
 
-Using [Ruby](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=59579) on this project allows use to harness the power of [RubyGems](https://rubygems.org/) particularly the [Nokogiri](http://www.nokogiri.org/) gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.  This project is only one step from the publishing pipeline that was built on Debrief project which produced a [PDF](https://acrobat.adobe.com/us/en/why-adobe/about-adobe-pdf.html) as its final output. 
+Using [Ruby](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=59579) on this project allows use to harness the power of [RubyGems](https://rubygems.org/) particularly the [Nokogiri](http://www.nokogiri.org/) gem along with XSLT 1.0 / XPath 1.0 to create the DITA XML files.  Using Ruby eliminates the need to use Eclipse and Apache Ant and can be run standalone from the command line as long as you have Ruby installed.  This project is only one step from the publishing pipeline that was built on Debrief project which produced a [PDF](https://acrobat.adobe.com/us/en/why-adobe/about-adobe-pdf.html) as its final output.
 
-The Ruby file that is used in this project is 'default.rb' builds the output parent Ditamap 'map.ditamap' (output/map.ditamap) and the 4 sub dita tasks in the 'output/dita' folder. 
+The Ruby file that is used in this project is `default.rb` builds the output parent Ditamap `map.ditamap` (output/map.ditamap) and the 4 sub DITA tasks in the `output/dita` folder.
 
 [&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
 
@@ -46,12 +48,10 @@ The DITA standard is maintained by the [OASIS](https://www.oasis-open.org/) DITA
 
 ## The Project
 
-[Ruby](https://www.ruby-lang.org/en/) is very [powerful](https://www.ruby-lang.org/en/documentation/success-stories/), is growing in popularity and is currently ranked 12th on the [TIOBE Index](http://www.tiobe.com/tiobe_index). 
+The Ruby code in `default.rb` has some [XSL](https://en.wikipedia.org/wiki/XSL) code embedded,
+ as well as some [XML](https://en.wikipedia.org/wiki/XML) markup in a interpolated [string literal](http://ruby-doc.org/core-2.2.0/doc/syntax/literals_rdoc.html) syntax.
 
-This project's Ruby code has some [XSL](https://en.wikipedia.org/wiki/XSL) code embedded,
- as well as some [XML](https://en.wikipedia.org/wiki/XML) markup in an interpolated [Heredoc](http://ruby-doc.org/core-2.2.0/doc/syntax/literals_rdoc.html) syntax. 
-
-The [Eclipse cheat sheets](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm) test data folder - 'cheatsheets-xml-test-data' is best viewed inside Eclipse, and is used as input when 'default.rb' runs.
+The [Eclipse cheat sheets](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm) test data folder - `cheatsheets-xml-test-data` is best viewed inside Eclipse, and is used as input when `default.rb` runs.
 
 [&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
 
@@ -60,7 +60,7 @@ The [Eclipse cheat sheets](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.e
 
 If you are still to afraid to dive in and try Ruby, how about some easy free web based interactive courses on Ruby and technology in general:
 
-- [Try Ruby](http://tryruby.org/levels/1/challenges/0) 
+- [Try Ruby](http://tryruby.org/levels/1/challenges/0)
 - [Codecademy Ruby](https://www.codecademy.com/learn/ruby)
 - [Learn the command line](https://www.codecademy.com/learn/learn-the-command-line)
 - [Try Git](https://www.codeschool.com/courses/try-git)
@@ -91,7 +91,7 @@ So now that you are the [Chuck Norris](https://en.wikipedia.org/wiki/Chuck_Norri
 
 ### ruby -v  
 
-For further information on your local Ruby environment type: 
+For further information on your local Ruby environment type:
 
 ### ruby --help
 
@@ -111,9 +111,9 @@ You can use the up and down arrows to navigate through the man page.  Press q to
 
 [&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
 
-Ruby also ships with 'ri' a tool used to display information about Ruby Classes, modules and methods from your terminal
+Ruby also ships with `ri` a tool used to display information about Ruby Classes, modules and methods from your terminal
 
-A lot of people don't know 'ri' exists and use google search instead.
+A lot of people don't know `ri` exists and use google search instead.
 
 ### man ri
 
@@ -161,13 +161,13 @@ This program uses the Nokogiri gem so you must install it by running:
 
 For more information on the gem command:
 
-### gem -h 
+### gem -h
 
 ![gem -h](documentation/images/gem-h.png)
 
 [&#8593;](#eclipse-cheat-sheets-xml-to-dita-with-ruby-xsl-nokogiri) [&#8595;](#contributions)
 
-I recommend running: 
+I recommend running:
 
 ### gem list --local  
 
@@ -175,7 +175,7 @@ that shows which gems are currently installed on your system.
 
 ![gem list --local](documentation/images/gem-list-local.png)
 
-To see in further detail which gems are installed bring up a locally served web page at http://localhost:8808/ by typing: 
+To see in further detail which gems are installed bring up a locally served web page at http://localhost:8808/ by typing:
 
 ### gem server
 
@@ -244,7 +244,7 @@ RubyInstaller for Windows - http://rubyinstaller.org/
 
 Ruby Version Manager (RVM) - https://rvm.io/
 
-Installing Ruby - https://www.ruby-lang.org/en/documentation/installation/ 
+Installing Ruby - https://www.ruby-lang.org/en/documentation/installation/
 
 Ruby success stories - https://www.ruby-lang.org/en/documentation/success-stories/
 
