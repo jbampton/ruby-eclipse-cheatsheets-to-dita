@@ -6,6 +6,8 @@ order = %w[intro_composite.xml
            s2r_composite.xml
            satc_composite.xml]
 
+n = 'NoPrint'
+
 stylesheet = %(<xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -34,10 +36,12 @@ stylesheet = %(<xsl:stylesheet
             <xsl:variable name="path" select="param[@name='path']/@value"/>
             <task id="{generate-id(.)}">
               <title>
-                <xsl:apply-templates select="document($path)//cheatsheet/@title"/>
+                <xsl:apply-templates
+                  select="document($path)//cheatsheet/@title"/>
               </title>
               <shortdesc>
-                <xsl:apply-templates select="document($path)//cheatsheet/intro/description"/>
+                <xsl:apply-templates
+                  select="document($path)//cheatsheet/intro/description"/>
               </shortdesc>
               <taskbody>
                 <steps>
@@ -80,12 +84,14 @@ stylesheet = %(<xsl:stylesheet
     <xsl:copy/>
   </xsl:template>
 
-  <xsl:template match="i[.= 'NoPrint']"/>
+  <xsl:template match="i[.='#{n}']"/>
 
-  <xsl:template match="text()[preceding-sibling::i[.='NoPrint'][1]][following-sibling::i[.='NoPrint'][1] ] | *[preceding-sibling::i[.='NoPrint'][1]][following-sibling::i[.='NoPrint'][1] ]"/>
+  <xsl:template
+    match="text()[preceding-sibling::i[.='#{n}'][1]][following-sibling::i[.='#{n}'][1]]|
+    *[preceding-sibling::i[.='#{n}'][1]][following-sibling::i[.='#{n}'][1]]"/>
 
   <xsl:template match="br">
-    <ph></ph>
+    <ph />
   </xsl:template>
 
   <xsl:template match="i">
@@ -104,11 +110,18 @@ ditamap = %(<?xml version="1.0" encoding="UTF-8"?>
     <author>Debrief</author>
     <author>John Bampton</author>
     <source>http://debrief.info/</source>
-    <publisher>Github John Bampton and #{11_461_173_985_121.to_s.split(/[356]/).map(&:to_i).map(&:chr).join.capitalize}</publisher>
+    <publisher>Github John Bampton and #{11_461_173_985_121
+    .to_s
+    .split(/[356]/)
+    .map(&:to_i)
+    .map(&:chr)
+    .join
+    .capitalize}</publisher>
     <critdates>
       <created date="#{Date.today}"/>
     </critdates>
-    <audience type="marine expert" job="analysis" experiencelevel="intermediate"/>
+    <audience type="marine expert"
+      job="analysis" experiencelevel="intermediate"/>
     <category>Maritime</category>
     <category>Software</category>
     <othermeta name="type" content="Naval"/>
